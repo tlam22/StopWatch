@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { StopWatchComponent } from './stop-watch/stop-watch.component';
-import { StopWatchTimePipe } from './stop-watch-time.pipe';
+import { StopWatchTimePipe } from './pipes/stop-watch-time.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
