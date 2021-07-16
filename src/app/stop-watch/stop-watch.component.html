@@ -1,5 +1,18 @@
-<p>
-stop-watch works! {{count | stopWatchTime}}
-</p>
 
-<button>Start/Stop</button>
+
+<div class="outer"> 
+  <div class="dot">
+    <p class="time">
+      {{count | stopWatchTime}}
+    </p>
+  
+  </div>
+  
+  <button class="button" (click)="buttonClicked()">{{btnTxt}}</button>
+  <button class="button" style="margin-left: 20px;"
+    *ngIf="btnTxt === start"
+    (click) = "clearStopTimer()"
+  >
+      Reset
+  </button>
+</div>
